@@ -8,7 +8,7 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-DeepLearning-EE4C2C)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
----
+====================================================================================================
 
 # 📚 Table of Contents
 
@@ -29,7 +29,7 @@
 - Author
 - License
 
----
+====================================================================================================
 
 # 📖 Overview
 
@@ -46,7 +46,7 @@ The system combines Deep Learning, Explainable AI, and Large Language Models to 
 
 The application consists of a **FastAPI backend**, a **Streamlit frontend**, an **EfficientNet-B0** classification model, **Grad-CAM** visualization, and **ChatGroq** for structured medical report generation.
 
----
+====================================================================================================
 
 # ✨ Features
 
@@ -60,7 +60,7 @@ The application consists of a **FastAPI backend**, a **Streamlit frontend**, an 
 - ⚡ RESTful API using FastAPI
 - 🎨 Interactive Streamlit Dashboard
 
----
+====================================================================================================
 
 # 🏗️ System Architecture
 
@@ -91,7 +91,7 @@ The application consists of a **FastAPI backend**, a **Streamlit frontend**, an 
                      SQLite Database
 ```
 
----
+====================================================================================================
 
 # 🛠 Technology Stack
 
@@ -109,7 +109,7 @@ The application consists of a **FastAPI backend**, a **Streamlit frontend**, an 
 | Image Processing | Pillow, OpenCV |
 | Visualization | Matplotlib |
 
----
+====================================================================================================
 
 # 📂 Project Structure
 
@@ -158,14 +158,14 @@ brain-tumor-ai/
 └── .gitignore
 ```
 
----
+====================================================================================================
 
 # 🚀 Installation
 
 Clone the repository.
 
 ```bash
-git clone https://github.com/<your-username>/brain-tumor-ai.git
+git clone https://github.com/PG113131/brain-tumor-ai.git
 
 cd brain-tumor-ai
 ```
@@ -194,25 +194,45 @@ Install the required packages.
 pip install -r requirements.txt
 ```
 
----
+====================================================================================================
 
 # ⚙ Configuration
 
-Create a `.env` file in the project root.
+This project requires a **Groq API Key** to generate AI-powered radiology reports.
 
-```env
-GROQ_API_KEY=your_groq_api_key
+## Step 1 – Get a Groq API Key
 
-DATABASE_URL=sqlite:///./data/brain_tumor.db
+Visit:
+
+https://console.groq.com/keys
+
+Create a free API key.
+
+## Step 2 – Create the Environment File
+
+Copy the provided template.
+
+### Windows
+
+```powershell
+copy .env.example .env
 ```
 
-Or copy the provided template.
+### Linux / macOS
 
 ```bash
 cp .env.example .env
 ```
 
----
+Open the `.env` file and replace the placeholder.
+
+```env
+GROQ_API_KEY=your_groq_api_key_here
+
+DATABASE_URL=sqlite:///./data/brain_tumor.db
+```
+
+====================================================================================================
 
 # 🚀 Quick Start
 
@@ -243,13 +263,26 @@ http://localhost:8000
 http://localhost:8000/docs
 ```
 
+====================================================================================================
+
+# 📌 First Run
+
+When you run the project for the first time:
+
+- The pretrained model is downloaded automatically from the GitHub Release.
+- No manual download is required.
+- The download happens only once.
+- Future runs reuse the downloaded model.
+
+====================================================================================================
+
 ### Streamlit Dashboard
 
 ```
 http://localhost:8501
 ```
 
----
+====================================================================================================
 
 # 🛠 Utility Scripts
 
@@ -263,7 +296,7 @@ http://localhost:8501
 | `predict_image.py` | Predict a single MRI image |
 | `predict_directory.py` | Predict all MRI images in a folder |
 
----
+====================================================================================================
 
 # 📈 Model Performance
 
@@ -274,7 +307,7 @@ http://localhost:8501
 | Recall | **93.69%** |
 | F1 Score | **93.56%** |
 
----
+====================================================================================================
 
 # 🌐 REST API
 
@@ -284,7 +317,7 @@ http://localhost:8501
 | GET | `/api/v1/history` | Retrieve prediction history |
 | GET | `/docs` | Interactive Swagger documentation |
 
----
+====================================================================================================
 
 # 📸 Screenshots
 
@@ -292,25 +325,25 @@ http://localhost:8501
 
 _Add a screenshot here._
 
----
+====================================================================================================
 
 ## Prediction Result
 
 _Add a screenshot here._
 
----
+====================================================================================================
 
 ## Grad-CAM Heatmap
 
 _Add a screenshot here._
 
----
+====================================================================================================
 
 ## AI Radiology Report
 
 _Add a screenshot here._
 
----
+====================================================================================================
 
 # 🔮 Future Improvements
 
@@ -322,7 +355,7 @@ _Add a screenshot here._
 - PACS integration
 - Continuous model retraining
 
----
+====================================================================================================
 
 # 📚 References
 
@@ -334,7 +367,7 @@ _Add a screenshot here._
 - EfficientNet Research Paper
 - Grad-CAM Research Paper
 
----
+====================================================================================================
 
 # 👨‍💻 Author
 
@@ -344,4 +377,4 @@ B.Tech – Artificial Intelligence & Machine Learning
 
 SRKR Engineering College
 
-GitHub: https://github.com/<your-username>
+GitHub: https://github.com/PG113131
