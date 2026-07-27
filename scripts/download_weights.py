@@ -1,8 +1,10 @@
 from pathlib import Path
 import urllib.request
 
-MODEL_URL = "https://github.com/PG113131/<YOUR_REPO>/releases/download/v1.0/best_model.pth"
-
+MODEL_URL = (
+    "https://github.com/PG113131/brain-tumor-ai/"
+    "releases/download/V1.0.0/best_model.pth"
+)
 MODEL_PATH = Path("models/best_model.pth")
 
 
