@@ -346,7 +346,6 @@ http://localhost:8501
 
 - Support for DICOM images
 - Multi-modal MRI (T1, T2, FLAIR)
-- PDF report generation
 - User authentication
 - Cloud deployment
 - PACS integration
@@ -371,7 +370,5 @@ http://localhost:8501
 **Pawan Ganesh Bokka**
 
 B.Tech – Artificial Intelligence & Machine Learning
-
-SRKR Engineering College
 
 GitHub: https://github.com/PG113131
