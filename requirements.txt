@@ -1,0 +1,32 @@
+# Web & API
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Streamlit Frontend
+streamlit
+requests
+
+# Database & ORM
+sqlalchemy
+psycopg2-binary
+pydantic
+pydantic-settings
+python-dotenv
+
+# Deep Learning & Computer Vision
+torch
+torchvision
+pillow
+opencv-python-headless
+numpy
+matplotlib
+scikit-learn
+
+# LLM & Explainability
+langchain-core
+langchain-groq
+
+# Testing & Utilities
+pytest
+httpx

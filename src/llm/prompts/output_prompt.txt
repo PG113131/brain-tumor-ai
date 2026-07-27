@@ -1,0 +1,14 @@
+Return ONLY valid JSON.
+
+{{
+    "impression": "",
+    "key_findings": [
+        "",
+        ""
+    ],
+    "certainty_analysis": "",
+    "recommendations": [
+        "",
+        ""
+    ]
+}}

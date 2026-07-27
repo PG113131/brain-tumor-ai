@@ -1,0 +1,36 @@
+Generate a formal radiology report based on the following diagnostic metadata.
+
+Patient Identification:
+{patient_code}
+
+Patient Name:
+{patient_name}
+
+Patient Age:
+{age}
+
+Patient Gender:
+{gender}
+
+Primary Diagnostic Model Finding
+
+Classification:
+{predicted_class}
+
+Model Confidence:
+{confidence:.2f}%
+
+Class Probability Breakdown:
+{class_probabilities}
+
+Grad-CAM Analysis
+
+Primary Region of High Visual Activation:
+{gradcam_region}
+
+Generate a structured report with:
+
+1. Impression
+2. Key Findings
+3. Certainty Analysis
+4. Recommendations

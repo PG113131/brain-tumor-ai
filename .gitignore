@@ -1,0 +1,103 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Bytecode
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# ==========================
+# Virtual Environments
+# ==========================
+.venv/
+venv/
+env/
+ENV/
+
+# ==========================
+# Environment Variables
+# ==========================
+.env
+
+# ==========================
+# IDEs
+# ==========================
+.vscode/
+.idea/
+*.iml
+
+# ==========================
+# OS Files
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Logs
+# ==========================
+logs/
+*.log
+
+# ==========================
+# Python Testing
+# ==========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==========================
+# Jupyter
+# ==========================
+.ipynb_checkpoints/
+
+# ==========================
+# Build
+# ==========================
+build/
+dist/
+*.egg-info/
+
+# ==========================
+# SQLite Database
+# ==========================
+data/*.db
+*.sqlite3
+
+# ==========================
+# Uploaded Images
+# ==========================
+data/uploads/*
+!data/uploads/.gitkeep
+
+# ==========================
+# Generated Heatmaps
+# ==========================
+data/heatmaps/*
+!data/heatmaps/.gitkeep
+
+# ==========================
+# Temporary Files
+# ==========================
+*.tmp
+*.bak
+
+# ==========================
+# Model Weights
+# ==========================
+models/*.pth
+models/*.pt
+models/*.ckpt
+
+# Keep model folder
+!models/README.md
+
+# ==========================
+# Cache
+# ==========================
+.cache/
