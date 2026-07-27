@@ -323,25 +323,22 @@ http://localhost:8501
 
 ## Home Page
 
-_Add a screenshot here._
+<img width="1880" height="890" alt="Screenshot 2026-07-27 195701" src="https://github.com/user-attachments/assets/508071cb-f8f6-497f-b8cc-d1bf68be7704" />
+
 
 ====================================================================================================
 
 ## Prediction Result
 
-_Add a screenshot here._
+<img width="1835" height="854" alt="Screenshot 2026-07-27 195818" src="https://github.com/user-attachments/assets/0474ec25-c7ba-4733-81a9-13796912c562" />
+
 
 ====================================================================================================
 
-## Grad-CAM Heatmap
+## Prediction_History
 
-_Add a screenshot here._
+<img width="1885" height="894" alt="Screenshot 2026-07-27 195727" src="https://github.com/user-attachments/assets/f5159433-befc-4326-8a7d-23d2d15f2963" />
 
-====================================================================================================
-
-## AI Radiology Report
-
-_Add a screenshot here._
 
 ====================================================================================================
 
