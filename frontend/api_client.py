@@ -1,7 +1,7 @@
 import requests
 from typing import Dict, Any, Optional
 
-FASTAPI_BASE_URL = "http://127.0.0.1:8000"
+FASTAPI_BASE_URL ="https://your-backend-name.onrender.com"
 
 
 class APIClient:
