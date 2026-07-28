@@ -1,7 +1,7 @@
 import requests
 from typing import Dict, Any, Optional
 
-FASTAPI_BASE_URL = "http://localhost:8000"
+FASTAPI_BASE_URL = "https://brain-tumor-ai-q6gc.onrender.com"
 
 
 class APIClient:
