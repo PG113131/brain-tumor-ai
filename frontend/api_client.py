@@ -62,7 +62,7 @@ class APIClient:
     def get_prediction(self, prediction_id):
         response = requests.get(
             f"{self.base_url}/api/v1/prediction/{prediction_id}",
-            timeout=40
+            timeout=200
         )
         response.raise_for_status()
         return response.json()
