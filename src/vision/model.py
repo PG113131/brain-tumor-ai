@@ -115,21 +115,40 @@ def load_trained_model(
 
         model = build_model(pretrained=False)
 
+
+
+        logger.info("Step 1: Before torch.load")
         checkpoint = torch.load(model_path, map_location=device)
-        logger.info(type(checkpoint))
+        logger.info("Step 2: torch.load completed")
+        
+        logger.info(f"Checkpoint type: {type(checkpoint)}")
         
         if isinstance(checkpoint, dict):
-            logger.info(checkpoint.keys())
-
-        # Extract weight dictionary if loaded from Trainer checkpoint
+            logger.info(f"Checkpoint keys: {list(checkpoint.keys())}")
+        
         if isinstance(checkpoint, dict) and "model_state_dict" in checkpoint:
             state_dict = checkpoint["model_state_dict"]
         else:
             state_dict = checkpoint
-
-        model.load_state_dict(state_dict)
+        
+        logger.info("Step 3: Before load_state_dict")
+        
+        missing, unexpected = model.load_state_dict(
+            state_dict,
+            strict=False
+        )
+        
+        logger.info("Step 4: load_state_dict completed")
+        logger.info(f"Missing Keys: {missing}")
+        logger.info(f"Unexpected Keys: {unexpected}")
+        
+        logger.info("Step 5: Before model.to")
         model.to(device)
+        logger.info("Step 6: model.to completed")
+        
+        logger.info("Step 7: Before model.eval")
         model.eval()
+        logger.info("Step 8: model.eval completed")
 
         logger.info(f"Model loaded successfully on {device}.")
         return model
