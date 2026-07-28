@@ -28,7 +28,7 @@ class ReportGenerator:
     def __init__(self) -> None:
         self.llm = ChatGroq(
             groq_api_key=settings.GROQ_API_KEY,
-            model_name="llama-3.3-70b-versatile",
+            model_name="llama-3.1-8b-instant",
             temperature=0.2
         )
         self.structured_llm = self.llm.with_structured_output(RadiologyReportSchema)
