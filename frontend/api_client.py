@@ -14,7 +14,7 @@ class APIClient:
     def check_health(self) -> bool:
         """Verifies backend service availability."""
         try:
-            response = requests.get(f"{self.base_url}/api/v1/health", timeout=30)
+            response = requests.get(f"{self.base_url}/api/v1/health", timeout=3)
             return response.status_code == 200
         except requests.RequestException:
             return False
@@ -55,14 +55,14 @@ class APIClient:
     def get_patient_history(self, patient_code):
         response = requests.get(
             f"{self.base_url}/api/v1/history/{patient_code}",
-            timeout=40
+            timeout=30
         )
         response.raise_for_status()
         return response.json()
     def get_prediction(self, prediction_id):
         response = requests.get(
             f"{self.base_url}/api/v1/prediction/{prediction_id}",
-            timeout=200
+            timeout=30
         )
         response.raise_for_status()
         return response.json()
