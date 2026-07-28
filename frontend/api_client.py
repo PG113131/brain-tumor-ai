@@ -55,14 +55,14 @@ class APIClient:
     def get_patient_history(self, patient_code):
         response = requests.get(
             f"{self.base_url}/api/v1/history/{patient_code}",
-            timeout=10
+            timeout=40
         )
         response.raise_for_status()
         return response.json()
     def get_prediction(self, prediction_id):
         response = requests.get(
             f"{self.base_url}/api/v1/prediction/{prediction_id}",
-            timeout=10
+            timeout=40
         )
         response.raise_for_status()
         return response.json()
