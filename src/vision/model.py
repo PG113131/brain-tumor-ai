@@ -116,6 +116,10 @@ def load_trained_model(
         model = build_model(pretrained=False)
 
         checkpoint = torch.load(model_path, map_location=device)
+        logger.info(type(checkpoint))
+        
+        if isinstance(checkpoint, dict):
+            logger.info(checkpoint.keys())
 
         # Extract weight dictionary if loaded from Trainer checkpoint
         if isinstance(checkpoint, dict) and "model_state_dict" in checkpoint:
